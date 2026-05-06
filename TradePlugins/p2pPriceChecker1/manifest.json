@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "CSGO Empire Price Checker",
+  "version": "1.0",
+  "description": "Quicker price checking of Empire items via Csgoskins",
+  "permissions": [
+  "tabs",
+  "https://csgoempire.com/*"
+  ],
+
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://csgoempire.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "action": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}

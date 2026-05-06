@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Steam Inventory Item Notes Tool",
+  "version": "1.0",
+  "description": "Putting notes to your Steam Items",
+  "permissions": [
+  "tabs",
+  "https://steamcommunity.com/*"
+  ],
+
+  "icons": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://steamcommunity.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+
+  "action": {
+    "16": "images/icon.png",
+    "48": "images/icon.png",
+    "128": "images/icon.png"
+  }
+}
